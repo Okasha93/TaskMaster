@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import ReduxProvider from '../provider/ReduxProvider';
 import { store } from '../store/store';
+import Navbar from "@/components/NavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,9 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-gradient-to-b from-primary-900/10 to-gray-50">
         <ReduxProvider>
-          {children}
+        <Navbar />
+          <main>{children}</main>
         </ReduxProvider>
       </body>
     </html>

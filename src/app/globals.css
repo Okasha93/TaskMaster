@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -24,10 +26,24 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  font-family: 'Tajawal', sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.navbar {
+  background-color: #1E3A8A; /* Dark Blue */
+  color: #FFFFFF; /* White */
+}
+
+.navbar a {
+  color: #FFFFFF;
+}
+
+.navbar a:hover {
+  color: #F97316; /* Orange */
 }
